@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+   <!-- Lottie Animation Android   -->
+   <!--Shreyas Vilaschandra Bhike -->
+   <!-- The App Wizard   -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="LOTTIE FILES WITH ANDROID"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:layout_margin="10dp"
+        android:gravity="center"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/mainanim"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:lottie_rawRes="@raw/foodsqueeze"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:layout_centerHorizontal="true"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/tickanim"
+        android:layout_below="@+id/mainanim"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:lottie_rawRes="@raw/tick"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_below="@+id/tickanim"
+        android:id="@+id/tvnew"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="THE APP WIZARD"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:layout_margin="10dp"
+        android:gravity="center"/>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
